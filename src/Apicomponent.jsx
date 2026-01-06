@@ -102,12 +102,11 @@
 // }
 
 // export default Apicomponent
-
 import { BASE_URL } from "./Apiconfig"
 import useFetch from "./useFetch"
 
 const Apicomponent = () => {
-    const {data} =useFetch(`${BASE_URL}/post`)
+    const {data} =useFetch(`${BASE_URL}/posts`)
     return(
         <div>
             {
@@ -118,3 +117,7 @@ const Apicomponent = () => {
     )
 }
 export default Apicomponent
+
+
+
+

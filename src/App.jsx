@@ -29,7 +29,7 @@ const App = ()=>{
       <Route path="/blog" element={<Blog/>}/>
       <Route path= "/blog/:id" element={<Viewblog/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
-      <Route path="/apicomponent" element={<Apicomponent/>}></Route>
+      <Route path="/apicomponent" element={<Apicomponent/>}/>
       
       
     </Routes>
