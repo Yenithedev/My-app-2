@@ -10,7 +10,7 @@ import Viewblog from "./Viewblog"
 import Signup from "./Signup"
 import { ToastContainer } from "react-toastify"
 import Apicomponent from "./Apicomponent"
-import Counter from "./counter"
+import Counter from "./Counter"
 
 
 
