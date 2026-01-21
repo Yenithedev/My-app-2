@@ -23,7 +23,7 @@ import { blogData } from "./Blogdata"
             title={filterBlog[0].title}<br/>
             Description={filterBlog[0].desc}<br/>
             <img src={filterBlog[0].img}/>
-            <button onClick={()=>handleBtn()}>Go To</button>
+            <button className="border border-black p-2 m-2" onClick={()=>handleBtn()}>Go To</button>
 
         </div>
         </>

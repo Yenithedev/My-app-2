@@ -8,8 +8,12 @@ const Todo = () =>{
     const [isEditing,setIsEditing] = useState(false)
     const [editingIndex,setEditingIndex] = useState("")
     const handleTodo = () =>{
+        if (todo!==""){
         setStoredTodo([...storedtodo,todo])
         setTodo("")
+        }else{
+            alert("Todo can't be empty")
+        }
     }
     const handleEdit = (index) =>{
         setIsEditing(true)
@@ -17,11 +21,15 @@ const Todo = () =>{
         setEditingIndex(index)
     }
     const handleSave = () =>{
-        storedtodo[editingIndex] = todo
-        setStoredTodo([...storedtodo])
-        setIsEditing(false)
-        setTodo("")
-        setEditingIndex("")
+        if (todo !== "")
+            {storedtodo[editingIndex] = todo
+            setStoredTodo([...storedtodo])
+            setIsEditing(false)
+            setTodo("")
+            setEditingIndex("")
+    }else{
+        alert("Todo can't be empty")
+    }
 
     }
     return(
